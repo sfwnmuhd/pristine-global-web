@@ -70,111 +70,55 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-instrument">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-50 p-6">
+      <header className="relative bg-white border-b border-gray-100 py-4 px-6">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/5c37caed7063a838654dd75d93f7e77c7bb8d299?width=288" 
-            alt="Pristine Global Logo" 
-            className="w-30 h-30 rounded-lg"
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/5c37caed7063a838654dd75d93f7e77c7bb8d299?width=288"
+            alt="Pristine Global Logo"
+            className="w-20 h-20 rounded-lg"
           />
+
+          {/* Navigation Menu */}
+          <nav className="hidden md:flex space-x-8">
+            <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Home</a>
+            <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">About</a>
+            <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Locations</a>
+            <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Services</a>
+            <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Contact Us</a>
+          </nav>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Original Background */}
+      <section className="relative bg-white overflow-hidden">
+        {/* Background Grid Pattern */}
         <div className="absolute inset-0">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d3d51a30b0eaf52bf76283df93b3ca90570fee1a?width=3814"
-            alt="Background"
-            className="w-full h-full object-cover"
+            alt="Background Grid"
+            className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-white/30"></div>
-        </div>
-
-        {/* Map Overlay with 50% opacity */}
-        <div className="absolute inset-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
-            alt="World Map Overlay"
-            className="w-50 h-50 object-cover opacity-50 "
-          />
-        </div>
-
-        {/* Interactive Map Pins */}
-        <div className="absolute inset-0">
-          {locations.map((location) => (
-            <div
-              key={location.id}
-              className="absolute cursor-pointer"
-              style={{ 
-                left: `${location.coordinates.x}%`, 
-                top: `${location.coordinates.y}%` 
-              }}
-              onMouseEnter={() => setHoveredLocation(location.id)}
-              onMouseLeave={() => setHoveredLocation(null)}
-            >
-              {/* Pulse Animation */}
-              <motion.div
-                className="w-4 h-4 bg-pristine-blue rounded-full relative"
-                animate={{
-                  scale: [1, 1.5, 1],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                <motion.div
-                  className="absolute inset-0 bg-pristine-blue rounded-full opacity-30"
-                  animate={{
-                    scale: [1, 2, 1],
-                    opacity: [0.3, 0, 0.3]
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-              </motion.div>
-
-              {/* Hover Popup */}
-              {hoveredLocation === location.id && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-lg shadow-lg border min-w-[250px] z-10"
-                >
-                  <h3 className="font-semibold text-pristine-blue mb-2">{location.name}</h3>
-                  <p className="text-sm text-pristine-text-gray">{location.details}</p>
-                </motion.div>
-              )}
-            </div>
-          ))}
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-2">
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-6 py-16">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-semibold leading-tight mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6"
           >
             Global Excellence in{" "}
             <span className="text-pristine-blue font-bold">
               Healthcare, Retail & Technology
             </span>
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg text-black mb-12 tracking-wide"
+            className="text-lg text-gray-700 mb-8 max-w-4xl mx-auto"
           >
             Enhancing lives across the UK, Qatar, and India through compassionate care, innovative solutions, and trusted services.
           </motion.p>
@@ -183,7 +127,7 @@ export default function Index() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
             <button className="px-8 py-3 bg-pristine-blue text-white rounded-full text-sm font-medium hover:bg-opacity-90 transition-colors">
               Explore Our Services
@@ -191,6 +135,75 @@ export default function Index() {
             <button className="px-8 py-3 border border-pristine-blue text-pristine-blue rounded-full text-sm font-medium hover:bg-pristine-blue hover:text-white transition-colors">
               Contact Us
             </button>
+          </motion.div>
+
+          {/* World Map Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="relative max-w-4xl mx-auto"
+          >
+            <div className="relative">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
+                alt="World Map"
+                className="w-full h-auto"
+              />
+
+              {/* Interactive Map Pins */}
+              {locations.map((location) => (
+                <div
+                  key={location.id}
+                  className="absolute cursor-pointer"
+                  style={{
+                    left: `${location.coordinates.x}%`,
+                    top: `${location.coordinates.y}%`
+                  }}
+                  onMouseEnter={() => setHoveredLocation(location.id)}
+                  onMouseLeave={() => setHoveredLocation(null)}
+                >
+                  {/* Pulse Animation */}
+                  <motion.div
+                    className="w-4 h-4 bg-pristine-blue rounded-full relative"
+                    animate={{
+                      scale: [1, 1.5, 1],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    <motion.div
+                      className="absolute inset-0 bg-pristine-blue rounded-full opacity-30"
+                      animate={{
+                        scale: [1, 2, 1],
+                        opacity: [0.3, 0, 0.3]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                    />
+                  </motion.div>
+
+                  {/* Hover Popup */}
+                  {hoveredLocation === location.id && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-lg shadow-lg border min-w-[250px] z-10"
+                    >
+                      <h3 className="font-semibold text-pristine-blue mb-2">{location.name}</h3>
+                      <p className="text-sm text-pristine-text-gray">{location.details}</p>
+                    </motion.div>
+                  )}
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>

@@ -87,7 +87,7 @@ export default function Index() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d3d51a30b0eaf52bf76283df93b3ca90570fee1a?width=3814"
             alt="Background"
-            className="w-full h-50 object-cover"
+            className="w-full h-50 "
           />
           <div className="absolute inset-0 bg-white/30"></div>
         </div>

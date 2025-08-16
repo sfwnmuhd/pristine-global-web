@@ -84,9 +84,9 @@ export default function Index() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background World Map */}
         <div className="absolute inset-0">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/d3d51a30b0eaf52bf76283df93b3ca90570fee1a?width=3814" 
-            alt="World Map" 
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
+            alt="World Map"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-white/30"></div>

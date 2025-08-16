@@ -148,7 +148,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
                 alt="World Map"
-                className="w-full max-h-90 object-contain opacity-40"
+                className="w-[734px] h-[406] object-contain opacity-40"
               />
 
               {/* Interactive Map Pins */}

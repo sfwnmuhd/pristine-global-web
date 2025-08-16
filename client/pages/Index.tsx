@@ -157,7 +157,7 @@ export default function Index() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-2">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

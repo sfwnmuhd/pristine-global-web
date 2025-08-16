@@ -13,7 +13,18 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'instrument': ['Instrument Sans', 'sans-serif'],
+      },
       colors: {
+        'pristine': {
+          'blue': '#0B3C5D',
+          'text-gray': '#7E7878',
+          'text-dark': '#3F3939',
+          'text-black': '#2A2828',
+          'bg-light': '#E9E9E9',
+          'bg-contact': '#F6F6F6',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

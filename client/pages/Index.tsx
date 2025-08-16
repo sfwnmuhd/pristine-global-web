@@ -75,7 +75,7 @@ export default function Index() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/5c37caed7063a838654dd75d93f7e77c7bb8d299?width=288"
             alt="Pristine Global Logo"
-            className="w-20 h-20 rounded-lg"
+            className="w-30 h-30 rounded-lg"
           />
 
           {/* Navigation Menu */}

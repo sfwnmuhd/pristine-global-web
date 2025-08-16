@@ -6,7 +6,7 @@ const locations = [
   { 
     id: 'uk', 
     name: 'United Kingdom', 
-    coordinates: { x: 47, y: 28 }, 
+    coordinates: { x: 40, y: 28 }, 
     details: 'Three care homes and one child care facility offering specialized, person-centered care.' 
   },
   { 

@@ -70,17 +70,8 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-instrument">
       {/* Header */}
-      <header className="relative border-b border-gray-100 py-4 px-6">
-        {/* Background Grid Pattern - same as hero */}
-        <div className="absolute inset-0">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/d3d51a30b0eaf52bf76283df93b3ca90570fee1a?width=3814"
-            alt="Background Grid"
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
-
-        <div className="relative z-10 flex items-center justify-between max-w-7xl mx-auto">
+      <header className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
+        <div className="flex items-center justify-between max-w-7xl mx-auto">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/5c37caed7063a838654dd75d93f7e77c7bb8d299?width=288"
             alt="Pristine Global Logo"
@@ -110,7 +101,7 @@ export default function Index() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-6 py-8 h-full flex flex-col justify-center">
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-6 pt-24 pb-8 h-full flex flex-col justify-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -157,7 +148,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
                 alt="World Map"
-                className="w-full h-auto opacity-50"
+                className="w-full max-h-80 object-contain opacity-40"
               />
 
               {/* Interactive Map Pins */}

@@ -23,12 +23,14 @@ export default function CoreValuesSection() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-white border border-gray-200 rounded-xl p-8 text-center"
             >
-              <img 
-                src={value.icon} 
+              <img
+                src={value.icon}
                 alt={value.title}
                 className="w-42 h-42 mx-auto mb-6 opacity-80"
               />
-              <h3 className="text-3xl font-normal text-black mb-6">{value.title}</h3>
+              <h3 className="text-3xl font-normal text-black mb-6">
+                {value.title}
+              </h3>
               <p className="text-xl text-pristine-text-gray leading-relaxed">
                 {value.description}
               </p>

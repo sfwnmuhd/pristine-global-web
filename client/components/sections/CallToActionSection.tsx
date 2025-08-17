@@ -11,17 +11,21 @@ export default function CallToActionSection() {
           className="bg-pristine-blue rounded-xl p-12 relative overflow-hidden"
         >
           <div className="absolute inset-0 opacity-10">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/4d4f369a455a13efb2cd4c4da62c8e30c059f8f5?width=2604" 
-              alt="Gradient Background" 
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/4d4f369a455a13efb2cd4c4da62c8e30c059f8f5?width=2604"
+              alt="Gradient Background"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="relative flex flex-col lg:flex-row items-center justify-between">
             <div className="mb-8 lg:mb-0">
-              <h2 className="text-3xl font-medium text-white mb-4">Ready to Make an Impact?</h2>
+              <h2 className="text-3xl font-medium text-white mb-4">
+                Ready to Make an Impact?
+              </h2>
               <p className="text-xl text-white leading-relaxed">
-                Join us in our mission or partner to deliver exceptional services across<br />
+                Join us in our mission or partner to deliver exceptional
+                services across
+                <br />
                 healthcare, technology, and trading hubs.
               </p>
             </div>

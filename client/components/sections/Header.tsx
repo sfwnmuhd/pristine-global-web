@@ -7,14 +7,39 @@ export default function Header() {
           alt="Pristine Global Logo"
           className="w-28 h-28 rounded-lg"
         />
-        
+
         {/* Navigation Menu */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Home</a>
-          <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">About</a>
-          <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Locations</a>
-          <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Services</a>
-          <a href="#" className="text-gray-700 hover:text-pristine-blue transition-colors font-medium">Contact Us</a>
+          <a
+            href="#"
+            className="text-gray-700 hover:text-pristine-blue transition-colors font-medium"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-gray-700 hover:text-pristine-blue transition-colors font-medium"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="text-gray-700 hover:text-pristine-blue transition-colors font-medium"
+          >
+            Locations
+          </a>
+          <a
+            href="#"
+            className="text-gray-700 hover:text-pristine-blue transition-colors font-medium"
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            className="text-gray-700 hover:text-pristine-blue transition-colors font-medium"
+          >
+            Contact Us
+          </a>
         </nav>
       </div>
     </header>

@@ -34,7 +34,7 @@ export default function HeroSection() {
               className="absolute cursor-pointer"
               style={{
                 left: `${location.coordinates.x}%`,
-                top: `${location.coordinates.y}%`
+                top: `${location.coordinates.y}%`,
               }}
               onMouseEnter={() => setHoveredLocation(location.id)}
               onMouseLeave={() => setHoveredLocation(null)}
@@ -48,19 +48,19 @@ export default function HeroSection() {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               >
                 <motion.div
                   className="absolute inset-0 bg-pristine-blue rounded-full opacity-30"
                   animate={{
                     scale: [1, 2, 1],
-                    opacity: [0.3, 0, 0.3]
+                    opacity: [0.3, 0, 0.3],
                   }}
                   transition={{
                     duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                 />
               </motion.div>
@@ -73,8 +73,12 @@ export default function HeroSection() {
                   exit={{ opacity: 0, y: 10 }}
                   className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-lg shadow-lg border min-w-[250px] z-10"
                 >
-                  <h3 className="font-semibold text-pristine-blue mb-2">{location.name}</h3>
-                  <p className="text-sm text-pristine-text-gray">{location.details}</p>
+                  <h3 className="font-semibold text-pristine-blue mb-2">
+                    {location.name}
+                  </h3>
+                  <p className="text-sm text-pristine-text-gray">
+                    {location.details}
+                  </p>
                 </motion.div>
               )}
             </div>
@@ -102,7 +106,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg text-gray-700 mb-8 max-w-4xl mx-auto"
         >
-          Enhancing lives across the UK, Qatar, and India through compassionate care, innovative solutions, and trusted services.
+          Enhancing lives across the UK, Qatar, and India through compassionate
+          care, innovative solutions, and trusted services.
         </motion.p>
 
         <motion.div

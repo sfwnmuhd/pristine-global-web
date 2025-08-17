@@ -12,14 +12,15 @@ export default function DivisionByCountrySection() {
         >
           Our Division by Country
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-pristine-text-gray mb-12"
         >
-          Expanding across continents with excellence in care, technology, and distribution
+          Expanding across continents with excellence in care, technology, and
+          distribution
         </motion.p>
 
         {/* Country Selector */}
@@ -46,27 +47,34 @@ export default function DivisionByCountrySection() {
           className="bg-white rounded-xl border border-gray-200 p-8"
         >
           <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b9bc235f1adeb19209ec3398e8fbca66d5117640?width=996" 
-              alt="Pristine Care Homes" 
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/b9bc235f1adeb19209ec3398e8fbca66d5117640?width=996"
+              alt="Pristine Care Homes"
               className="w-full h-80 object-cover rounded-xl"
             />
             <div className="text-left">
-              <h3 className="text-3xl font-normal text-black mb-6">Pristine Care Homes</h3>
+              <h3 className="text-3xl font-normal text-black mb-6">
+                Pristine Care Homes
+              </h3>
               <p className="text-2xl text-pristine-text-gray leading-relaxed mb-8">
-                We operate three care homes and one child care facility in the UK, each offering specialised, person-centered care. Our flagship properties include Willoughby Grange Nursing Home and Broom Lane Care Home, designed to foster warmth, dignity, and community.
+                We operate three care homes and one child care facility in the
+                UK, each offering specialised, person-centered care. Our
+                flagship properties include Willoughby Grange Nursing Home and
+                Broom Lane Care Home, designed to foster warmth, dignity, and
+                community.
               </p>
-              
+
               <div className="flex items-center mb-4">
-                <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/208071ab056e786dd092d3478b2227af68444683?width=92" 
-                  alt="Project Icon" 
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/208071ab056e786dd092d3478b2227af68444683?width=92"
+                  alt="Project Icon"
                   className="w-12 h-12 mr-4"
                 />
                 <h4 className="text-2xl text-black">Upcoming Project</h4>
               </div>
               <p className="text-2xl text-pristine-text-gray">
-                A new 50-bed nursing home in Stoke-on-Trent is in development, underscoring our growth ambitions.
+                A new 50-bed nursing home in Stoke-on-Trent is in development,
+                underscoring our growth ambitions.
               </p>
             </div>
           </div>

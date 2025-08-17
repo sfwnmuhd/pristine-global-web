@@ -142,13 +142,13 @@ export default function Index() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="relative max-w-4xl mx-auto"
+            className="relative max-w-6xl mx-auto"
           >
             <div className="relative">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
                 alt="World Map"
-                className="w-[734px] h-[406] object-contain opacity-40"
+                className="w-full max-w-4xl h-auto object-contain opacity-40 mx-auto"
               />
 
               {/* Interactive Map Pins */}

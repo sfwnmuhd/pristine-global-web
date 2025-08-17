@@ -64,7 +64,7 @@ export default function HeroSection() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F182ebce20b994026ace85260408aef0c%2F34fe9c75c6344bc4a18af20b375a4cc6?format=webp&width=800"
               alt="World Map"
-              className="w-full max-w-4xl h-auto object-contain opacity-40 mx-auto"
+              className="w-full h-auto object-cover opacity-40"
             />
             
             {/* Interactive Map Pins */}

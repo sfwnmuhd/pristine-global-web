@@ -22,7 +22,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6"
+          className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4"
         >
           Global Excellence in{" "}
           <span className="text-pristine-blue font-bold">
@@ -34,7 +34,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg text-gray-700 mb-12 max-w-4xl mx-auto"
+          className="text-base md:text-lg text-gray-700 mb-8 max-w-4xl mx-auto"
         >
           Enhancing lives across the UK, Qatar, and India through compassionate care, innovative solutions, and trusted services.
         </motion.p>
@@ -43,7 +43,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
         >
           <button className="px-8 py-3 bg-pristine-blue text-white rounded-full text-sm font-medium hover:bg-opacity-90 transition-colors">
             Explore Our Services

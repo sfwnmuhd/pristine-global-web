@@ -36,7 +36,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-base md:text-lg text-gray-700 mb-8 max-w-4xl mx-auto"
         >
-          Enhancing lives across the UK, Qatar, and India through compassionate care, innovative solutions, and trusted services.
+          Enhancing lives across the UK, Qatar, and India through compassionate
+          care, innovative solutions, and trusted services.
         </motion.p>
 
         <motion.div

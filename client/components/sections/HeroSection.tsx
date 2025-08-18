@@ -6,7 +6,7 @@ export default function HeroSection() {
   const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
 
   return (
-    <section className="relative min-h-screen overflow-hidden py-32">
+    <section className="relative h-screen overflow-hidden flex items-center justify-center">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0">
         <img
@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-6 py-8">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
